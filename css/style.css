@@ -28,6 +28,9 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    color: blue;
+}
 nav li{
     list-style-type: none;
     margin-bottom: 20px;
@@ -81,16 +84,24 @@ article p{
     font-style: normal;
     font-weight: bold;
 }
+
 @media screen and (max-device-width: 800px){
     body{
         display: block;
+        padding: 0;
     }
     aside{
         width: 100%;
     }
+
     img{
         width: 30%;
     }
+    a{
+        color: white;
+        font-size: larger;
+    }
+
     .switch{
         display: block;
         position: absolute;
@@ -101,6 +112,7 @@ article p{
         font-size: x-large;
         color: white;
     }
+
 }
 @media screen and (max-device-width: 900px){
     span,progress{
@@ -111,5 +123,10 @@ article p{
         width: 70%;
         height: 20px;
     }
+    body{
+        padding: 0 0 40px 0;
+    }
+
+
 
 }
